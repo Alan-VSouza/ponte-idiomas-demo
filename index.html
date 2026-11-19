@@ -1,19 +1,48 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ponte Idiomas · Demo de atendimento com IA</title>
-    <meta name="description" content="Demonstração de uma assistente de IA que indica a turma certa, faz um mini nivelamento e marca aula experimental para uma escola de idiomas fictícia. Feito por Alan Souza." />
-    <meta property="og:title" content="Demo: assistente de IA para escolas de idiomas" />
-    <meta property="og:description" content="Tira dúvidas, consulta a agenda e marca consultas sozinha. Teste agora." />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23E2462D'/><path d='M20 22c4-4 9-3 12 0 3-3 8-4 12 0 4 5 1 14-2 22-1 3-4 3-5 0l-2-7c-1-2-5-2-6 0l-2 7c-1 3-4 3-5 0-3-8-6-17-2-22z' fill='white'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ponte Idiomas: escola de idiomas no Centro de São Carlos</title>
+    <meta name="description" content="Demonstração de uma assistente de IA que descobre o nível do aluno, mostra turmas com vaga e marca aula experimental para uma escola de idiomas fictícia." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ponte Idiomas: escola de idiomas no Centro de São Carlos" />
+    <meta property="og:description" content="Converse com a Duda, a assistente de IA que marca aula experimental nesta demonstração." />
+    <meta property="og:image" content="/share.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#e6dbc7" />
+    <meta name="site-kind" content="other" />
+    <meta name="page-type" content="service" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="color-scheme" content="light" />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/system.css" />
+    <link rel="stylesheet" href="/assets/ui/cards.css" />
+    <link rel="stylesheet" href="/assets/motion/motion.css" />
+    <link rel="stylesheet" href="/assets/layout/layout.css" />
+    <link rel="stylesheet" href="/assets/moments/pinned-chapters/moment.css" />
+    <style>
+      :root {
+        --p-bg: #e6dbc7; --p-surface: #ddd0b9; --p-ink: #062b8a; --p-muted: #3253a4;
+        --p-accent: #062b8a; --p-accent-ink: #e6dbc7; --p-action: #062b8a; --p-action-ink: #e6dbc7;
+        --p-inv-bg: #062b8a; --p-inv-surface: #153a90; --p-inv-ink: #e6dbc7; --p-inv-muted: #aab0bc;
+        --p-inv-accent: #e6dbc7; --p-inv-accent-ink: #062b8a; --p-inv-action: #e6dbc7; --p-inv-action-ink: #062b8a;
+        --font-display: "Host Grotesk", system-ui, sans-serif;
+        --font-text: "Host Grotesk", system-ui, sans-serif;
+        --display-weight: 400;
+        --display-tracking: -0.035em;
+        --display-tracking-xl: -0.04em;
+      }
+    </style>
+    <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+    <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
   </head>
   <body>
+    <!-- type: service (escola de idiomas)
+         deal: hero split (film re-dealt: no film), nav nav-centre, close close-type, footer footer-visit, rhythm dark-band, buttons solid, mark wordmark, grounds none
+         moments: pinned-chapters in #como-funciona
+         palette cobalt-on-sand, type host -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

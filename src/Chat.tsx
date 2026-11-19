@@ -7,7 +7,7 @@ const SUGESTOES = ['Quero inglês à noite, sou iniciante', 'Vou fazer intercâm
 
 const BOAS_VINDAS: Msg = {
   role: 'assistente',
-  texto: 'Oi! Eu sou a **Duda**, da Ponte Idiomas. Me conta qual idioma você quer aprender e para quê (trabalho, viagem, intercâmbio) que eu te mostro a turma certa e marco uma aula experimental grátis.',
+  texto: 'Oi, eu sou a **Duda**, da Ponte Idiomas. Me conta qual idioma você quer aprender e para quê (trabalho, viagem, intercâmbio) que eu te mostro a turma certa e marco uma aula experimental grátis.',
 }
 
 /** Renderiza **negrito** e listas com "- " sem usar HTML vindo da IA. */
@@ -94,14 +94,14 @@ export default function Chat() {
   const mostrarSugestoes = msgs.length <= 2 && !enviando
 
   return (
-    <section className="chat" aria-label="Conversa com a Duda, assistente da Ponte Idiomas">
-      <header className="chat-topo">
+    <div className="chat" role="region" aria-label="Conversa com a Duda, assistente da Ponte Idiomas">
+      <div className="chat-topo">
         <div className="avatar" aria-hidden="true">D</div>
         <div>
           <strong>Duda</strong>
           <span className="status"><i /> online agora · turmas e aula experimental</span>
         </div>
-      </header>
+      </div>
 
       <div className="chat-msgs" role="log" aria-live="polite" ref={listaRef}>
         {msgs.map((m, i) => (
@@ -150,6 +150,6 @@ export default function Chat() {
         </button>
       </form>
       <p className="chat-rodape">Demonstração com escola fictícia. Não envie dados pessoais.</p>
-    </section>
+    </div>
   )
 }
